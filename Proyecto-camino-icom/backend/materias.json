@@ -1,0 +1,407 @@
+[
+  {
+    "id": 1,
+    "nombre": ["Fundamentos de programación"],
+    "semestre": 1,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 2,
+    "nombre": ["Lógica Matematica"],
+    "semestre": 1,
+    "tipo": ["Tronco comun"],
+    "tags":["base"]
+  },
+  {
+    "id": 3,
+    "nombre": ["Precalculo"],
+    "semestre": 1,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 4,
+    "nombre": ["Fundamentos de fisica"],
+    "semestre": 1,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+{
+    "id": 5,
+    "nombre": ["Introduccioin a la ingenierias"],
+    "semestre": 1,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 6,
+    "nombre": ["Ética y legislación"],
+    "semestre": 1,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 7,
+    "nombre": ["Programacion estructurada"],
+    "semestre": 2,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 8,
+    "nombre": ["Matematicas Discretas"],
+    "semestre": 2,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 9,
+    "nombre": ["Calculo Diferencial e Integral"],
+    "semestre": 2,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 10,
+    "nombre": ["Mecanica"],
+    "semestre": 2,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 11,
+    "nombre": ["Administración de Proyectos Tecnologicos"],
+    "semestre": 2,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 12,
+    "nombre": ["Expresion Oral y Escrita"],
+    "semestre": 2,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 13,
+    "nombre": ["Programación Orientada a Objetos "],
+    "semestre": 3,
+    "tipo": ["Tronco comun"],
+    "tags": ["ia", "base", "videojuegos"]
+  },
+  {
+    "id": 14,
+    "nombre": ["Algebra Lineal"],
+    "semestre": 3,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 15,
+    "nombre": ["Ecuaciones Diferenciales"],
+    "semestre": 3,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 16,
+    "nombre": ["Circuitos Electricos y electromagnetismo"],
+    "semestre": 3,
+    "tipo": ["Tronco comun"],
+    "tags": ["software","base"]
+  },
+  {
+    "id": 17,
+    "nombre": ["Sistemas Digitales"],
+    "semestre": 3,
+    "tipo": ["Tronco comun"],
+    "tags": ["software", "base"]
+  },
+  {
+    "id": 18,
+    "nombre": ["Administración"],
+    "semestre": 3,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 19,
+    "nombre": ["Estructura de Datos"],
+    "semestre": 4,
+    "tipo": ["Intermedio"],
+    "tags": ["ia","base"]
+  },
+  {
+    "id": 20,
+    "nombre": ["Probabilidad y Estadistica"],
+    "semestre": 4,
+    "tipo": ["Tronco comun"],
+    "tags": ["ia","base"]
+  },
+  {
+    "id": 21,
+    "nombre": ["Metodos Numericos"],
+    "semestre": 4,
+    "tipo": ["Tronco comun"],
+    "tags": ["base"]
+  },
+  {
+    "id": 22,
+    "nombre": ["Arquitectura de computadoras"],
+    "semestre": 4,
+    "tipo": ["Intermedio"],
+    "tags": ["software"]
+  },
+  {
+    "id": 23,
+    "nombre": ["Programacion para Internet"],
+    "semestre": 4,
+    "tipo": ["Intermedio"],
+    "tags": ["ia"]
+  },
+  {
+    "id": 24,
+    "nombre": ["Liderazgo y Emprednimiento"],
+    "semestre": 4,
+    "tipo": ["Intermedio"],
+    "tags": ["base"]
+  },
+  {
+    "id": 25,
+    "nombre": ["Analisis de Algoritmos"],
+    "semestre": 5,
+    "tipo": ["Intermedio"],
+    "tags": ["software","base"]
+  },
+  {
+    "id": 26,
+    "nombre": ["Base de Datos"],
+    "semestre": 5,
+    "tipo": ["Intermedio"],
+    "tags": ["ia"]
+  },
+  {
+    "id": 27,
+    "nombre": ["Sistemas Operativos"],
+    "semestre": 5,
+    "tipo": ["Intermedio"],
+    "tags": ["software"]
+  },
+  {
+    "id": 28,
+    "nombre": ["Fundamentos de IA"],
+    "semestre": 5,
+    "tipo": ["Intermedio"],
+    "tags": ["ia"]
+  },
+  {
+    "id": 29,
+    "nombre": ["Redes de Computadoras"],
+    "semestre": 5,
+    "tipo": ["Intermedio"],
+    "tags": ["redes","ciberseguridad"]
+  },
+  {
+    "id": 30,
+    "nombre": ["Seminario de integración: Protocolo"],
+    "semestre": 5,
+    "tipo": ["Tronco comun"],
+    "tags": ["redes","ciberseguridad"]
+  },
+  {
+    "id": 31,
+    "nombre": ["Innovación y Tecnologia"],
+    "semestre": 6,
+    "tipo": ["Egreso"],
+    "tags": ["base"]
+  },
+  {
+    "id": 32,
+    "nombre": ["Interaccion Humano Computadora"],
+    "semestre": 6,
+    "tipo": ["Intermedio"],
+    "tags": ["desarrollo_videojuegos"]
+  },
+  {
+    "id": 33,
+    "nombre": ["Ingenieria de Software"],
+    "semestre": 6,
+    "tipo": ["Intermedio"],
+    "tags": ["base"]
+  },
+  {
+    "id": 34,
+    "nombre": ["Programación de Bajo Nivel"],
+    "semestre": 6,
+    "tipo": ["Egreso"],
+    "tags": ["software"]
+  },
+  {
+    "id": 35,
+    "nombre": ["Teoria de la comunicación"],
+    "semestre": 7,
+    "tipo": ["Intermedio"],
+    "tags": ["base"]
+  },
+  {
+    "id": 36,
+    "nombre": ["Seminario de integración: Desarrollo"],
+    "semestre": 7,
+    "tipo": ["Intermedio"],
+    "tags": ["base"]
+  },
+  {
+    "id": 37,
+    "nombre": ["laboratorio Abierto: Diseño"],
+    "semestre": 7,
+    "tipo": ["Intermedio"],
+    "tags": ["software"]
+  },
+  {
+    "id": 38,
+    "nombre": ["Compiladores"],
+    "semestre": 8,
+    "tipo": ["Intermedio"],
+    "tags": ["software"]
+  },
+  {
+    "id": 39,
+    "nombre": ["Seguridad de la Información"],
+    "semestre": 8,
+    "tipo": ["Egreso"],
+    "tags": ["ciberseguridad"]
+  },
+  {
+    "id": 40,
+    "nombre": ["laboratorio Abierto: Construcción"],
+    "semestre": 8,
+    "tipo": ["Intermedio"],
+    "tags": ["base"]
+  },
+  {
+    "id": 41,
+    "nombre": ["Programacion Paralela y Concurrente"],
+    "semestre": 9,
+    "tipo": ["Egreso"],
+    "tags": ["ia"]
+  },
+  {
+    "id": 42,
+    "nombre": ["Seminario de Integracion: Comunicación"],
+    "semestre": 9,
+    "tipo": ["Egreso"],
+    "tags": ["ciberseguridad"]
+  },
+  {
+    "id": 43,
+    "nombre": ["Laboratorio Abierto: Prueba"],
+    "semestre": 9,
+    "tipo": ["Intermedio"],
+    "tags": ["base"]
+  },
+  {
+    "id": 44,
+    "nombre": ["Administracion de redes"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["redes","ciberseguridad"]
+  },
+  {
+    "id": 45,
+    "nombre": ["Programacion de apclicaciones de red"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["redes","ciberseguridad"]
+  },
+  {
+    "id": 46,
+    "nombre": ["Interconexión de redes"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["redes","ciberseguridad"]
+  },
+  {
+    "id": 47,
+    "nombre": ["Programacion paralela y en tiempo real"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["software"]
+  },
+  {
+    "id": 48,
+    "nombre": ["Programacion de sistemas embebidos"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["software"]
+  },
+  {
+    "id": 49,
+    "nombre": ["Programacion de sistemas Avanzados"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["software"]
+  },
+  {
+    "id": 50,
+    "nombre": ["Aprendizaje Maquina"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["ia"]
+  },
+  {
+    "id": 51,
+    "nombre": ["Algoritmos Metahuristicos"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["ia"]
+  },
+  {
+    "id": 52,
+    "nombre": ["Redes Neuronales Artificiales y Aprendizaje profundo"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["ia"]
+  },
+  {
+    "id": 53,
+    "nombre": ["Diseño de video juegos"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["videojuegos"]
+  },
+  {
+    "id": 54,
+    "nombre": ["Programacion de graficos 3D"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["videojuegos"]
+  },
+  {
+    "id": 55,
+    "nombre": ["Videojuegos en RED"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["videojuegos"]
+  },
+  {
+    "id": 56,
+    "nombre": ["Seguridad en redes e infraestructura tecnologica"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["ciberseguridad"]
+  },
+  {
+    "id": 57,
+    "nombre": ["Seguridad defensiva y gestión"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["ciberseguridad"]
+  },{
+    "id": 58,
+    "nombre": ["Analisis Forense Digital"],
+    "semestre": ["6","7","8","9"],
+    "tipo": "especializante",
+    "tags": ["ciberseguridad"]
+  }
+]

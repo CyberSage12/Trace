@@ -1,0 +1,97 @@
+{
+    "ciberseguridad": {
+        "nombre": "Ciberseguridad",
+        "descripcion": "Te especializarás en la protección de sistemas, redes y datos contra ataques digitales. Aprenderás desde criptografía hasta análisis forense y seguridad defensiva.",
+        "campo_laboral": [
+            "Analista de seguridad SOC",
+            "Consultor de Pentesting (Hacking Ético)",
+            "Arquitecto de seguridad de red",
+            "Oficial de seguridad de la información (CISO)"
+            ],
+        "servicio_social": "Se recomienda buscar espacios en el CTA (Centro de Tecnologías para el Aprendizaje) de CUCEI apoyando en la administración de redes o en dependencias gubernamentales como la Policía Cibernética.",
+        "practicas_profesionales": "Lo ideal son empresas de consultoría de seguridad o departamentos de TI de bancos y empresas tecnológicas que manejen infraestructuras críticas.",
+        "materias_clave": ["Seguridad de la Información", "Análisis Forense Digital", "Seguridad Defensiva"]
+        },
+    "ia": {
+        "nombre": "Inteligencia Artificial",
+        "descripcion": "Diseñarás sistemas capaces de aprender y tomar decisiones. Te enfocarás en el procesamiento de grandes volúmenes de datos y la creación de modelos predictivos.",
+        "campo_laboral": [
+            "Científico de Datos (Data Scientist)",
+            "Ingeniero de Machine Learning",
+            "Desarrollador de sistemas expertos",
+            "Analista de Big Data"
+            ],
+        "servicio_social": "Proyectos de investigación con doctores del departamento de Ciencias Computacionales en CUCEI o desarrollo de software inteligente para áreas administrativas.",
+        "practicas_profesionales": "Empresas de desarrollo de software con enfoque en análisis de datos (como Oracle o Intel) o startups de tecnología avanzada.",
+        "materias_clave": ["Fundamentos de IA", "Aprendizaje Máquina", "Redes Neuronales"]
+        },
+    "redes": {
+        "nombre": "Redes de Computadora",
+        "descripcion": "Se centra en el estudio de arquitecturas de red, protocolos de comunicación, seguridad en la transmisión de datos y administración de servicios de red (servidores, routers, switches).",
+        "campo_laboral": [
+            "Administrador de Redes (Network Admin).",
+            "Ingeniero de Soporte en Telecomunicaciones.",
+            "Arquitecto de Infraestructura Cloud.",
+            "Especialista en Ciberseguridad de Redes.",
+            "Consultor de conectividad en Data Centers."
+        ],
+        "servicio_social": ["CTA (Coordinación de Tecnologías para el Aprendizaje): Es el clasico de CUCEI. Aquí puedes estar en el área de redes manteniendo los switches de los módulos, configurando APs o dando soporte al backbone del centro universitario.",
+            "CGSTI (Coordinación General de Servicios a Toda la Institución): Esta oficina está en el piso 8 del edificio de Rectoría General. Ellos administran la Red Universitaria de toda la UdeG. Es el nivel más alto de redes que verás en la universidad.",
+            "Laboratorios de Redes (Módulo O o P): Apoyar a los encargados de laboratorio en el mantenimiento de los racks y la actualización de firmware de los equipos."
+            ],
+        "practicas_profesionales": ["Cisco (GDC - Global Delivery Center): Tienen oficinas muy cerca de CUCEI (zona Minerva/Punto Sao Paulo). Es el lugar soñado para alguien de redes. Buscan mucho practicantes para roles de Technical Assistance Center (TAC).",
+        "Intel: En su campus de Zapopan tienen áreas de validación de redes y conectividad.",
+        "Telmex / Triara: Para entender la infraestructura de fibra óptica y centros de datos a gran escala."],
+        "materias_clave": ["Redes de Computadoras y Protocolos.",
+        "Administración de Redes.",
+        "Seguridad de la Información.",
+        "Sistemas Operativos de Red.",
+        "Taller de Redes (Configuración de dispositivos Cisco/Juniper)."]
+    },
+    "software":{
+        "nombre": "software de sistemas",
+        "descripcion": "Enfocada en el desarrollo de software de bajo nivel, sistemas operativos, compiladores y lenguajes de programación. Aquí es donde entra la optimización de recursos y el entendimiento profundo de la arquitectura del procesador.",
+        "campo_laboral": [
+            "Desarrollador de Sistemas Embebidos (IoT, automotriz).",
+            "Ingeniero de Software de Bajo Nivel (Drivers, Firmware).",
+            "Desarrollador de Sistemas Operativos.",
+            "Especialista en Computación de Alto Rendimiento (HPC).",
+            "Ingeniero de Compiladores o Herramientas de Desarrollo"
+        ],
+        "servicio_social":  ["Proyectos de Investigación con Doctores: Busca a los investigadores de los departamentos de Ciencias Computacionales o Electrónica que trabajen con Sistemas Embebidos o Arquitectura. Muchas veces cuentan con proyectos de CONACYT donde puedes liberar el servicio programando microcontroladores o drivers.",
+            "Unidad de Desarrollo de Software (en Rectoría o CUCEI): Participar en la creación de herramientas internas, APIs o mantenimiento de sistemas escolares (como el SIIAU, aunque es difícil entrar ahí)."
+            ],
+        "practicas_profesionales":  ["Intel (Guadalajara Design Center): Es el rey en esta área. Buscan becarios para Firmware, Validación de Post-Silicon y desarrollo en C/C++ de bajo nivel. Si te gusta Verilog y microprocesadores, este es tu lugar.",
+            "Continental: Se enfocan mucho en software automotriz (Sistemas Embebidos). Trabajarías con sistemas de tiempo real (RTOS) y protocolos como CAN bus.",
+            "NXP Semiconductors: Diseño de chips y software de soporte para hardware. Es de lo más puro en Software de Sistemas que encontrarás en la ciudad."
+            ],
+        "materias_clave": ["Sistemas Operativos (Internals).",
+            "Traductores de Lenguajes (Compiladores).",
+            "Programación de Sistemas (Bajo nivel/Ensamblador)",
+            "Arquitectura de Computadoras Avanzada.",
+            "Sistemas Distribuidos."]
+    },
+    "videojuegos":{
+        "nombre": "Desarrollo de videojuegos",
+        "descripcion": "Se centra en el ciclo de vida de un videojuego: diseño de mecánicas, programación de motores gráficos, física, inteligencia artificial aplicada y entornos virtuales (VR/AR). No es solo 'jugar', es entender cómo renderizar miles de polígonos de forma eficiente.",
+        "campo_laboral": [
+            "Programador de Jugabilidad (Gameplay Programmer).",
+            "Ingeniero de Motores Gráficos (Graphics/Engine Engineer).",
+            "Desarrollador de Realidad Virtual y Aumentada (Simuladores médicos/industriales).",
+            "Diseñador de Niveles y Mecánicas (Technical Level Designer).",
+            "Especialista en Redes para Juegos Multijugador."
+        ],
+        "servicio_social":  ["Laboratorio de Hipermedia (CUCEI): Pregunta en el Módulo O o con los coordinadores de la carrera; a veces hay proyectos de desarrollo de simuladores educativos o recorridos virtuales para la UdeG.",
+            "UDGVirtual: Suelen desarrollar contenidos interactivos y aplicaciones gamificadas para sus cursos en línea. Es un buen lugar para practicar diseño de interfaz y mecánicas educativas.",
+            "CTA (Área de Producción Audiovisual): Aunque es más video, a veces requieren apoyo para integrar elementos interactivos o realidad aumentada en proyectos del centro universitario.",
+            "Proyectos de Investigación: Busca doctores que trabajen con Interfaces Cerebro-Computadora (BCI) o Visión por Computadora; ellos suelen usar motores como Unity o Unreal para crear los entornos de prueba de sus experimentos."],
+        "practicas_profesionales":  ["Amber Mexico: Es uno de los estudios más grandes en la ciudad (están por la zona de Chapultepec). Tienen programas de becarios y trabajan en proyectos internacionales de alto nivel.",
+            "Ogre Head Studio: Creadores de Aztech Forgotten Gods. Es un estudio indie de renombre donde podrías aprender mucho sobre el ciclo completo de un juego.",
+            "Bromio: Otro estudio local fuerte que desarrolla juegos propios y hace 'work-for-hire' para empresas grandes.",
+            "Empresas de Simulación Industrial: No todo es diversión; empresas como Intel o Continental a veces buscan practicantes para crear simulaciones de entornos industriales o manejo de flotas usando motores de juegos (Digital Twins)."],
+        "materias_clave": ["Diseño de Videojuegos: Teoría de juegos, MDA (Mechanics, Dynamics, Aesthetics) y prototipado.",
+            "Programación de Gráficos 3D: Matemáticas para gráficos (álgebra lineal a tope), shaders y uso de APIs como OpenGL o DirectX.",
+            "Videojuegos en Red: Latencia, sincronización de estados y arquitectura servidor-cliente."
+            ]
+    }
+}

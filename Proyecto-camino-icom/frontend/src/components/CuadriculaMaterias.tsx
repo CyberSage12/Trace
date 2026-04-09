@@ -5,7 +5,7 @@ export default function CuadriculaMaterias({ ruta }: { ruta: string }) {
     const [materias, setMaterias] = useState<any[]>([]);
 
     useEffect(() => {
-        const urlSinCache = `http://localhost:8000/api/materias?timestamp=${new Date().getTime()}`;
+        const urlSinCache = `https://trace-5lnh.onrender.com/api/materias?timestamp=${new Date().getTime()}`;
         fetch(urlSinCache)
         .then((respuesta) => respuesta.json())
         .then((datos) => setMaterias(datos))

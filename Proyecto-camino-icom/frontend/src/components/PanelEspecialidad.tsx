@@ -9,7 +9,7 @@ export default function PanelEspecialidad({ ruta }: { ruta: string }) {
         if (!ruta || ruta === 'ninguna') return;
 
     setCargando(true);
-    fetch(`http://localhost:8000/api/especialidades/${ruta}`)
+    fetch(`https://trace-5lnh.onrender.com/api/especialidades/${ruta}`)
         .then((respuesta) => respuesta.json())
         .then((datos) => {
             if (datos.error) setInfo(null);

@@ -10,7 +10,7 @@ export default function Malla() {
 
   
   useEffect(() => {
-    fetch("http://localhost:8000/api/materias")
+    fetch("https://trace-5lnh.onrender.com/api/materias")
       .then((respuesta) => respuesta.json())
       .then((datos) => setMaterias(datos))
       .catch((error) => console.error("Error al traer las materias:", error));

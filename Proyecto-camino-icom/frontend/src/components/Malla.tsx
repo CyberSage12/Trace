@@ -23,7 +23,7 @@ export default function Malla() {
       return;
     }
 
-    fetch(`http://localhost:8000/api/especialidades/${rutaSeleccionada}`)
+    fetch(`https://trace-5lnh.onrender.com/api/especialidades/${rutaSeleccionada}`)
       .then((respuesta) => respuesta.json())
       .then((datos) => {
         if (datos.error) setInfoEspecialidad(null);

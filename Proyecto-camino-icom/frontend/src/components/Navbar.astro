@@ -1,0 +1,32 @@
+---
+// Un componente de Astro puro, sin React.
+import logoTraceRoute from '../assets/favicon.png';
+---
+
+<nav style="background-color: #161b22; padding: 15px 40px; border-bottom: 1px solid #30363d; display: flex; justify-content: space-between; align-items: center;">
+  
+  
+  <a href="/" style="display: flex; align-items: center; gap: 10px; color: #58a6ff; font-size: 1.5rem; font-weight: 900; text-decoration: none;">
+  <img src={logoTraceRoute.src} alt="TraceRoute Logo" style="width: 35px; height: 35px;" />
+  Trace
+  </a>
+
+  {/* Los enlaces de navegación */}
+  <div style="display: flex; gap: 20px; align-items: center;">
+    <a href="/materias" style="color: #c9d1d9; text-decoration: none; font-weight: 500; font-size: 1rem;">
+      Explorar Malla
+    </a>
+    <a href="/test" style="background-color: #238636; color: white; text-decoration: none; font-weight: bold; padding: 8px 16px; border-radius: 6px; font-size: 0.95rem;">
+      Hacer el Test
+    </a>
+  </div>
+</nav>
+
+<style>
+  nav a {
+    transition: all 0.2s ease-in-out;
+  }
+  nav a:hover {
+    filter: brightness(1.2);
+  }
+</style>

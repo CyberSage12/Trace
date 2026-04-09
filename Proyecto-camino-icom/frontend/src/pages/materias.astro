@@ -1,0 +1,51 @@
+---
+import ExploradorManual from '../components/ExploradorManual';
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Explorador de Malla | Camino ICOM</title>
+  </head>
+  <body>
+  <Navbar></Navbar>
+    <main style="max-width: 1200px; margin: 40px auto; padding: 20px;">
+      
+      
+      <div style="margin-bottom: 30px;">
+        <h1 style="color: #e6e6e6; font-size: 2.2rem; margin-bottom: 10px;">Explorador de Malla Curricular</h1>
+        <p style="color: #8b949e; font-size: 1.1rem;">
+          Navega libremente por todas las materias de la carrera. Selecciona una especialidad para resaltar la ruta sugerida.
+        </p>
+      </div>
+
+      {/* Inyectamos el controlador con el client:load para que funcione el select */}
+      <ExploradorManual client:load />
+
+    </main>
+
+    <style is:global>
+      .tarjeta-materia {
+        background-color: #121620; 
+        border: 1px solid #2a3441; 
+        border-radius: 8px;
+        padding: 20px;
+        color: white;
+        transition: all 0.3s ease-in-out; /* Clave para la fluidez */
+        cursor: pointer;
+      }
+
+      .tarjeta-materia:hover {
+        transform: translateY(-5px); 
+        border-color: #00ffcc; 
+        box-shadow: 
+          0 0 10px rgba(0, 255, 204, 0.4), 
+          0 0 30px rgba(0, 255, 204, 0.2);
+      }
+    </style>
+  </body>
+</html>

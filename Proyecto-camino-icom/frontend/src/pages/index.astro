@@ -1,0 +1,84 @@
+---
+import Navbar from '../components/Navbar.astro';
+import '../styles/global.css';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Inicio | Trace </title>
+    
+  </head>
+  <body style="background-color: #0d1117; margin: 0;">
+    <div id="particles-js" style="position: fixed; width: 100vw; height: 100vh; z-index: -1; top: 0; left: 0; background-color: #0d1117;"></div>
+    {/* Inyectamos el Menú hasta arriba */}
+    <Navbar />
+      
+    <main style="max-width: 900px; margin: 80px auto; padding: 20px; text-align: center;">
+      <h1 style="font-size: 3.5rem; color: #e6e6e6; margin-bottom: 20px; line-height: 1.2;">
+        Domina tu futuro en <br/>
+        <span style="color: #58a6ff;">Ingeniería en Computación</span>
+      </h1>
+      
+      <p style="font-size: 1.2rem; color: #8b949e; margin-bottom: 50px; line-height: 1.6; max-width: 700px; margin-left: auto; margin-right: auto;">
+        Trace te ayuda a descubrir tu especialidad ideal en CUCEI y a planear tu ruta académica desde el tronco común hasta tu titulación.
+      </p>
+      
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <a href="/test" style="background-color: #238636; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 14px rgba(35, 134, 54, 0.4);">
+           Descubrir mi especialidad
+        </a>
+        <a href="/materias" style="background-color: transparent; color: #58a6ff; border: 2px solid #58a6ff; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1rem;">
+          Explorar la malla libremente
+        </a>
+      </div>
+    </main>
+    <script is:inline src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script is:inline>
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 80, /* Cantidad de nodos */
+            "density": { "enable": true, "value_area": 800 }
+          },
+          "color": { "value": "#58a6ff" }, /* Color azul de TraceRoute */
+          "shape": { "type": "circle" },
+          "opacity": { "value": 0.5, "random": false },
+          "size": { "value": 3, "random": true },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#58a6ff", /* Líneas conectoras azules */
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 2, /* Velocidad de la red */
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": { "enable": true, "mode": "grab" }, /* Las líneas intentan agarrar tu ratón */
+            "onclick": { "enable": true, "mode": "push" }, /* Si das clic, creas más nodos */
+            "resize": true
+          },
+          "modes": {
+            "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+            "push": { "particles_nb": 4 }
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
+  </body>
+</html>

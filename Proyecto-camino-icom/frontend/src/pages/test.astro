@@ -1,0 +1,29 @@
+---
+import TestVocacional from '../components/TestVocacional';
+import '../styles/global.css'; 
+import Navbar from '../components/Navbar.astro';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Test Vocacional | Explorador</title>
+  </head>
+  <body>
+  <Navbar></Navbar>
+    <main style="max-width: 800px; margin: 40px auto; padding: 20px;">
+      
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h1 style="color: #58a6ff; font-size: 2.5rem; margin-bottom: 10px;">Descubre tu Especialidad</h1>
+        <p style="color: #8b949e; font-size: 1.1rem;">
+          Responde estas preguntas y el sistema calculará qué ruta se adapta mejor a tu perfil como ingeniero.
+        </p>
+      </div>
+
+      <TestVocacional client:load />
+
+    </main>
+  </body>
+</html>

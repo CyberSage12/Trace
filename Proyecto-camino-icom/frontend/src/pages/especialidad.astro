@@ -1,0 +1,38 @@
+---
+import Navbar from '../components/Navbar.astro';
+import ContenedorEspecialidad from '../components/ContenedorEspecialidad';
+
+// (Si tienes tu global.css, déjalo aquí, si no, puedes borrar esta línea)
+import '../styles/global.css';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Tu Especialidad | Camino ICOM</title>
+  </head>
+  {/* Agregamos el color de fondo oscuro y quitamos márgenes al body para que no se vea movido */}
+  <body style="background-color: #0d1117; margin: 0; font-family: system-ui, -apple-system, sans-serif;">
+    
+    {/* Tu barra de navegación superior */}
+    <Navbar />
+
+    <main style="max-width: 1200px; margin: 40px auto; padding: 20px;">
+      
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+        <h1 style="color: #e6e6e6; font-size: 2rem; margin: 0;">Tu Ruta Recomendada</h1>
+        
+        {/* Un botón para volver a hacer el test si el usuario quiere */}
+        <a href="/test" style="background-color: #30363d; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.2s;">
+          ↩ Volver a hacer el test
+        </a>
+      </div>
+
+      {/* Inyectamos el pegamento (que adentro trae el panel y la malla) */}
+      <ContenedorEspecialidad client:load />
+
+    </main>
+  </body>
+</html>

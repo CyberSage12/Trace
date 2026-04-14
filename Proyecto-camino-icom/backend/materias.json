@@ -239,7 +239,7 @@
   },
   {
     "id": 35,
-    "nombre": ["Teoria de la comunicación"],
+    "nombre": ["Teoria de la computación"],
     "semestre": 7,
     "tipo": ["Intermedio"],
     "tags": ["base"]

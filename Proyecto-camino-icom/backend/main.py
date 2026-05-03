@@ -70,6 +70,17 @@ def obtener_materias():
         })
     return lista_materias
 
+@app.get("/api/especialidades")
+def obtener_especialidades():
+    # Si tienes tus especialidades en grafo_icom.py, impórtalas y devuélvelas.
+    # Si no, aquí tienes la estructura base para que el .map() de React deje de fallar:
+    return [
+        {"id": "software", "nombre": "Ingeniería de Software", "color": "#58a6ff"},
+        {"id": "redes", "nombre": "Redes y Ciberseguridad", "color": "#2ea043"},
+        {"id": "sistemas", "nombre": "Sistemas de Información", "color": "#a371f7"},
+        {"id": "hardware", "nombre": "Arquitectura y Hardware", "color": "#d29922"}
+    ]
+
 @app.post("/api/calcular-ruta")
 def calcular_ruta_optima(datos: SolicitudRuta):
     materias_aprobadas = set(datos.cursadas)

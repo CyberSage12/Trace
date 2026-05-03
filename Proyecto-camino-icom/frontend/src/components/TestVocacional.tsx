@@ -139,7 +139,7 @@ export default function TestVocacional() {
         return <WaitingScreen rutaGanadora={resultadoFinal} />;
     }
 
-   return (
+    return (
     <div className={styles.contenedorTest}>
         {/* 1. Componente de la Barra de Progreso (Modular) */}
         <ProgressBar 

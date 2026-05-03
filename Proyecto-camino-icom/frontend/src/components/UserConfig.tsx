@@ -37,7 +37,7 @@ export default function UserConfig() {
             cursadas: Array.from(cursadas)
         };
 
-        const response = await fetch('http://127.0.0.1:8000/api/calcular-ruta', {
+        const response = await fetch('https://trace-5lnh.onrender.com/api/calcular-ruta', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),

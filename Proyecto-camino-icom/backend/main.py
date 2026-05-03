@@ -57,6 +57,18 @@ def calcular_peso_ruta_critica(id_materia, grafo, memo=None):
         
     memo[id_materia] = peso
     return peso
+@app.get("/api/materias")
+def obtener_materias():
+    lista_materias = []
+    for id_materia, info in MALLA.items():
+        lista_materias.append({
+            "id": id_materia,
+            "nombre": info["nombre"],
+            "semestre": info.get("semestre_base", 1), 
+            "creditos": info.get("creditos", 8),
+            "area": info.get("area", "Básica")
+        })
+    return lista_materias
 
 @app.post("/api/calcular-ruta")
 def calcular_ruta_optima(datos: SolicitudRuta):

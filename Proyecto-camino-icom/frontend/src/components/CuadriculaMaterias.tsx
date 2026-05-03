@@ -7,10 +7,24 @@ export default function CuadriculaMaterias({ ruta }: { ruta: string }) {
     useEffect(() => {
         const urlSinCache = `https://trace-5lnh.onrender.com/api/materias?timestamp=${new Date().getTime()}`;
         fetch(urlSinCache)
-        .then((respuesta) => respuesta.json())
-        .then((datos) => setMaterias(datos))
-        .catch((error) => console.error("Error al traer las materias:", error));
-    }, []); 
+        .then((respuesta) => {
+            if (!respuesta.ok) throw new Error(`Error del servidor: ${respuesta.status}`);
+            return respuesta.json();
+        })
+        .then((datos) => {
+            // Verificamos que sí sea un arreglo antes de guardarlo
+            if (Array.isArray(datos)) {
+                setMaterias(datos);
+            } else {
+                console.error("FastAPI respondió, pero no mandó un arreglo:", datos);
+                setMaterias([]); // Ponemos un arreglo vacío para que .filter() no explote
+            }
+        })
+        .catch((error) => {
+            console.error("Error al traer las materias:", error);
+            setMaterias([]); // Salvavidas en caso de que Render esté caído
+        });
+    }, []);
 
 
     function obtenerTexto(valor: any) {

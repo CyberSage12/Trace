@@ -57,29 +57,28 @@ def calcular_peso_ruta_critica(id_materia, grafo, memo=None):
         
     memo[id_materia] = peso
     return peso
+@app.get("/")
+def ruta_principal():
+    return{"mensaje":"¡Bienvenido a la API del Camino ICOM! Ve a /api/materias para ver los datos."}
+
 @app.get("/api/materias")
 def obtener_materias():
-    lista_materias = []
-    for id_materia, info in MALLA.items():
-        lista_materias.append({
-            "id": id_materia,
-            "nombre": info["nombre"],
-            "semestre": info.get("semestre_base", 1), 
-            "creditos": info.get("creditos", 8),
-            "area": info.get("area", "Básica")
-        })
-    return lista_materias
+    with open("materias.json", "r", encoding="utf-8") as archivo:
+        materias = json.load(archivo)
 
-@app.get("/api/especialidades")
-def obtener_especialidades():
-    # Si tienes tus especialidades en grafo_icom.py, impórtalas y devuélvelas.
-    # Si no, aquí tienes la estructura base para que el .map() de React deje de fallar:
-    return [
-        {"id": "software", "nombre": "Ingeniería de Software", "color": "#58a6ff"},
-        {"id": "redes", "nombre": "Redes y Ciberseguridad", "color": "#2ea043"},
-        {"id": "sistemas", "nombre": "Sistemas de Información", "color": "#a371f7"},
-        {"id": "hardware", "nombre": "Arquitectura y Hardware", "color": "#d29922"}
-    ]
+    return materias
+
+@app.get("/api/especialidades/{id_especialidad}")
+def obtener_info_especialidad(id_especialidad: str):
+    with open("especialidades.json", "r", encoding="utf-8") as archivo:
+        todas = json.load(archivo)
+    
+    info = todas.get(id_especialidad.lower())
+    
+    if not info:
+        return {"error": "Especialidad no encontrada"}
+        
+    return info
 
 @app.post("/api/calcular-ruta")
 def calcular_ruta_optima(datos: SolicitudRuta):

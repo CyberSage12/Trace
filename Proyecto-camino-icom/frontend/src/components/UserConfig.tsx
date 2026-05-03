@@ -36,7 +36,7 @@ export default function UserConfig() {
             calendario_ingreso: calendario,
             cursadas: Array.from(cursadas)
         };
-
+        console.log("Enviando payload:", payload);
         const response = await fetch('https://trace-5lnh.onrender.com/api/calcular-ruta', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

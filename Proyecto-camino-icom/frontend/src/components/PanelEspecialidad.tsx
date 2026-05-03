@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Loader  from './Loader';
 import styles from './Malla.module.css';
 
 export default function PanelEspecialidad({ ruta }: { ruta: string }) {
@@ -22,7 +23,7 @@ export default function PanelEspecialidad({ ruta }: { ruta: string }) {
         });
     }, [ruta]); 
 
-    if (cargando) return <p style={{ color: '#8b949e' }}>Cargando perfil profesional...</p>;
+    if (cargando) return <Loader />;
     if (!info) return null; 
 
     return (

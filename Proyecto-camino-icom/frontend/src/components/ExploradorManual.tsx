@@ -22,6 +22,7 @@ export default function ExploradorManual() {
                 <option value="software">Sofware de sistemas</option>
                 <option value="redes">Redes de computadoras</option>
                 <option value="ia">Inteligencia Artificial</option>
+                <option value="Videojuegos">Desarrollo de videojuegos</option>
             </select>
             <div style={{ display: 'flex', gap: '15px', marginLeft: 'auto', fontSize: '0.9rem', color: '#8b949e', alignItems: 'center' }}>
                     

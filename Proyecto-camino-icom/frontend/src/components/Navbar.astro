@@ -19,6 +19,10 @@ import logoTraceRoute from '../assets/favicon.png';
     <a href="/test" style="background-color: #238636; color: white; text-decoration: none; font-weight: bold; padding: 8px 16px; border-radius: 6px; font-size: 0.95rem;">
       Hacer el Test
     </a>
+    <a href="/planificador" class="nav-btn-traceroute">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+    TraceRoute
+    </a>
   </div>
 </nav>
 
@@ -28,5 +32,24 @@ import logoTraceRoute from '../assets/favicon.png';
   }
   nav a:hover {
     filter: brightness(1.2);
+  }
+  .nav-btn-traceroute {
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    color: #58a6ff;
+    border: 1px solid rgba(88, 166, 255, 0.4);
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .nav-btn-traceroute:hover {
+    background-color: rgba(88, 166, 255, 0.1);
+    border-color: #58a6ff;
+    box-shadow: 0 0 8px rgba(88, 166, 255, 0.3);
   }
 </style>

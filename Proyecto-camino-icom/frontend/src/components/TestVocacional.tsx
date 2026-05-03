@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Malla.module.css'; 
+import { ProgressBar } from './ProgressBar';
+import { WaitingScreen } from './WaitingScreeen';
+import {motion} from 'framer-motion';
 
 const PREGUNTAS_TEST = [
 {
@@ -110,45 +113,73 @@ const PREGUNTAS_TEST = [
 
 export default function TestVocacional() {
     const [preguntaActual, setPreguntaActual] = useState(0);
-    const [puntos, setPuntos] = useState<Record<string, number>>({
-        software: 0, ciberseguridad: 0, ia: 0, redes: 0
-});
+    const [puntos, setPuntos] = useState({
+        software: 0, ciberseguridad: 0, ia: 0, redes: 0, videojuegos: 0
+    });
+    const [resultadoFinal, setResultadoFinal] = useState<string | null>(null);
 
-const manejarRespuesta = (valorEspecialidad: string) => {
-    const nuevosPuntos = { ...puntos, [valorEspecialidad]: puntos[valorEspecialidad] + 1 };
-    setPuntos(nuevosPuntos);
+    const manejarRespuesta = (valorEspecialidad: string) => {
+        const clave = valorEspecialidad as keyof typeof puntos;
+        const nuevosPuntos = { ...puntos, [clave]: (puntos[clave] || 0) + 1 };
+        setPuntos(nuevosPuntos);
 
-    if (preguntaActual + 1 < PREGUNTAS_TEST.length) {
-        setPreguntaActual(preguntaActual + 1);
+        if (preguntaActual + 1 < PREGUNTAS_TEST.length) {
+            setPreguntaActual(preguntaActual + 1);
         } else {
-      // Calcular ganador
-        let ganador = "software";
-        let maxPuntos = -1;
-        
-        for (const [especialidad, puntaje] of Object.entries(nuevosPuntos)) {
-        if (puntaje > maxPuntos) {
-            maxPuntos = puntaje;
-            ganador = especialidad;
-            }
-        }
-
-        window.location.href = `/especialidad?ruta=${ganador}`;
+            // Calculamos ganador y disparamos la pantalla de espera
+            let ganador = Object.keys(nuevosPuntos).reduce((a, b) => 
+                nuevosPuntos[a as keyof typeof puntos] > nuevosPuntos[b as keyof typeof puntos] ? a : b
+            );
+            setResultadoFinal(ganador);
         }
     };
 
-    return (
-    <div className={styles.contenedorTest}>
-    <h3>{PREGUNTAS_TEST[preguntaActual].pregunta}</h3>
+    // Si ya terminamos, mostramos el componente de espera
+    if (resultadoFinal) {
+        return <WaitingScreen rutaGanadora={resultadoFinal} />;
+    }
 
-    {PREGUNTAS_TEST[preguntaActual].opciones.map((opcion, index) => (
-    <button 
-        key={index} 
-        className={styles.opcionBtn}
-        onClick={() => manejarRespuesta(opcion.valor)}
-        >
-        {opcion.texto}
-        </button>
-    ))}
+   return (
+    <div className={styles.contenedorTest}>
+        {/* 1. Componente de la Barra de Progreso (Modular) */}
+        <ProgressBar 
+            actual={preguntaActual + 1} 
+            total={PREGUNTAS_TEST.length} 
+        />
+
+        {/* Contenedor de la pregunta actual */}
+        <div className={styles.preguntaSeccion}>
+            <p className={styles.progresoTexto}>
+                Pregunta {preguntaActual + 1} de {PREGUNTAS_TEST.length}
+            </p>
+            
+            <h3>{PREGUNTAS_TEST[preguntaActual].pregunta}</h3>
+
+            <div className={styles.opcionesGrid}>
+                {/* 2. Mapeo de botones con Gamificación y CSS Modules */}
+                {PREGUNTAS_TEST[preguntaActual].opciones.map((opcion, index) => (
+                    <motion.button 
+                        key={index} 
+                        // Animaciones de feedback táctil
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        
+                        // Lógica de respuesta
+                        onClick={() => manejarRespuesta(opcion.valor)}
+                        
+                        // Clase de tu archivo Malla.module.css
+                        className={styles.opcionBtn}
+                    >
+                        {/* Identificador dinámico A, B, C... */}
+                        <span className={styles.identificador}>
+                            {String.fromCharCode(65 + index)}.
+                        </span>
+                        
+                        {opcion.texto}
+                    </motion.button>
+                ))}
+            </div>
+        </div>
     </div>
 );
 }
